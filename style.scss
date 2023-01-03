@@ -12,9 +12,10 @@ font-family: 'Ovo', serif;
 */
 
 /* Configirações gerais */
-html{
+html {
     scroll-behavior: smooth;
 }
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -25,8 +26,8 @@ html{
 
 
 body {
-    background-color: rgb(0, 0, 0);
-    overflow: hidden;
+background-color: black;
+
 }
 
 h1,
@@ -71,6 +72,10 @@ header {
     backdrop-filter: blur(2rem);
     position: fixed;
     z-index: 100;
+
+    .mobile {
+        display: none;
+    }
 
     span {
         font-family: 'Barlow Condensed', sans-serif;
@@ -144,20 +149,15 @@ header {
 .mainSlider {
     width: 100%;
     height: 100%;
-
-display: flex;
-
 }
 
 .mainSlides {
-
-    width: 200%;
-    height: 100%;
-    display: flex
+    width: 100%;
+    height: 200%;
 }
 
 .sessao {
-    width: 100vh;
+    width: 100%;
     height: 100%;
     position: absolute;
 }
@@ -167,85 +167,83 @@ display: flex;
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
-    left: 0%;
+    top: 0%;
 }
 
 #main00 {
     display: flex;
 
-    h1 {
-        font-size: 110px;
-        font-weight: 100;
-    }
 
-    h3 {
-        color: rgba(255, 255, 255, 0.623);
-        font-weight: 400;
-        font-size: 25px;
-        letter-spacing: 1px;
-    }
+}
 
+#main00 h1 {
+    font-size: 110px;
+    font-weight: 100;
+}
+
+#main00 h3 {
+    color: rgba(255, 255, 255, 0.623);
+    font-weight: 400;
+    font-size: 25px;
+    letter-spacing: 1px;
 }
 
 /* parte00-2 */
 .parte00-2 {
     width: 50%;
-
-    .bola {
-        width: 270px;
-        height: 270px;
-        right: 60px;
-        bottom: 140px;
-        position: absolute;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #explore {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 170px;
-        height: 170px;
-        border-radius: 60%;
-        border: solid 0px rgba(255, 255, 255, 0.336);
-
-
-    }
-
-    h2 {
-        letter-spacing: 1px;
-        font-family: 'Ovo', serif;
-        font-weight: 200;
-        color: black;
-        background-color: white;
-        padding: 40px 40px;
-        border-radius: 60%;
-        width: 170px;
-        height: 170px;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        cursor: pointer;
-        border: solid 40px rgba(233, 227, 227, 0);
-        transition: all 0.6s;
-    }
-
-    h2:hover {
-        width: 200px;
-        height: 200px;
-
-    }
-
-    #explore:hover {
-        border: solid 130px rgba(255, 255, 255, 0.336);
-        transition: all 0.6s;
-    }
-
+    height: 100vh;
 }
 
+.bola {
+    width: 270px;
+    height: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 16%;
+    right: 15%;
+}
 
+#explore {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 170px;
+    border-radius: 60%;
+    border: solid 40px rgba(255, 255, 255, 0.336);
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.6s;
+}
+
+h2 {
+    letter-spacing: 1px;
+    font-family: 'Ovo', serif;
+    font-weight: 200;
+    color: black;
+    background-color: white;
+    padding: 40px 40px;
+    border-radius: 60%;
+    width: 170px;
+    height: 170px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border: solid 40px rgba(233, 227, 227, 0);
+    transition: all 0.6s;
+}
+
+h2:hover {
+    width: 200px;
+    height: 200px;
+}
+
+#explore:hover {
+    border: solid 130px rgba(255, 255, 255, 0.336);
+
+}
 
 /* parte00-1 */
 
@@ -278,7 +276,7 @@ display: flex;
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
-    left: 100%;
+    top: 100%;
 }
 
 
@@ -319,26 +317,30 @@ display: flex;
 }
 
 .slider1-01 {
-    width: 360px;
-    height: 450px;
+    width: 100%;
+    height: 400px;
     display: flex;
     overflow: hidden;
     flex-direction: column;
     position: absolute;
-    left: 8%;
+    left: 0%;
     top: 30%;
 }
 
 .slides1-01 {
     width: 400%;
-    height: 450px;
+    height: 400px;
     display: flex;
+   
 
 }
 
 .planet {
-    width: 360px;
+    width: 100%;
     height: 450px;
+    padding-left: 120px;
+
+ 
 }
 
 
@@ -346,13 +348,13 @@ display: flex;
 
 .parte2-01 {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }
 
-.parte2-01 h3 {
-    color: rgb(255, 255, 255);
-    font-weight: 300;
-    letter-spacing: 2px;
-}
 
 .slider2-01 {
     width: 350px;
@@ -361,8 +363,8 @@ display: flex;
     display: flex;
     column-gap: 60px;
     position: absolute;
-    right: 200px;
-    bottom: 140px;
+    right: 15%;
+    bottom: 15%;
 
 }
 
@@ -381,7 +383,7 @@ display: flex;
     flex-direction: column;
     justify-content: center;
     row-gap: 30px;
-    padding: 0 30px;
+    padding: 0 20px;
 
 
 }
@@ -389,7 +391,7 @@ display: flex;
 .texto-01 h3,
 p,
 hr {
-    width: 100%;
+    width: 90%;
 }
 
 
@@ -414,7 +416,7 @@ hr {
     column-gap: 40px;
 }
 
-label {
+.labels label {
     color: #ffffff;
     border-bottom: solid 2px rgba(255, 255, 255, 0);
     cursor: pointer;
@@ -422,7 +424,7 @@ label {
     font-size: 13px;
 }
 
-label:hover {
+.labels label:hover {
     border-bottom: solid 2px rgba(255, 255, 255, 0.37);
 }
 
@@ -465,21 +467,25 @@ label:hover {
 
 .margin0 {
     margin-left: -0%;
+        transition: all 1s;
 
 }
 
 .margin1 {
-    margin-left: -25%;
+    margin-left: -33%;
+        transition: all 1s;
 
 }
 
 .margin2 {
-    margin-left: -50%;
+    margin-left: -100%;
+        transition: all 1s;
 
 }
 
 .margin3 {
-    margin-left: -75%;
+    margin-left: -300%;
+        transition: all 1s;
 
 }
 
@@ -488,3 +494,665 @@ label:hover {
 
 
 /*/* 01 Technologia */
+
+
+
+@media screen and (max-width: 900px) and (min-width: 846px) {
+
+    header {
+
+
+        span {
+
+            font-size: 13px;
+
+        }
+
+
+        .logo {
+            height: 100%;
+            width: 46%;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo::after {
+            margin-left: 50px;
+            margin-right: -10px;
+        }
+
+
+        #nav {
+            width: 30%;
+            column-gap: 12%;
+        }
+
+
+
+    }
+
+
+
+    .slider2-01 {
+
+        right: 1%;
+        bottom: 15%;
+    }
+
+    #menu-01 {
+        right: 13%;
+    }
+
+
+    .bola {
+        position: absolute;
+        bottom: 22%;
+        right: 2%;
+    }
+
+    
+}
+
+@media screen and (max-width:845px){
+
+    header {
+        justify-content: center;
+        column-gap: 50px;
+
+        .mobile {
+            display: flex;
+        }
+
+        .close {
+            display: none;
+            cursor: pointer;
+        }
+
+        .burguer {
+            width: 40px;
+            cursor: pointer;
+        }
+
+        span {
+
+            font-size: 13px;
+
+        }
+
+        .separador {
+            display: none;
+        }
+
+        .logo {
+            height: 100%;
+            width: 46%;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo::after {
+            width: 100%;
+            margin-left: 0;
+            margin-right: -50px;
+
+        }
+
+        #nav {
+            display: none;
+        }
+
+
+
+    }
+
+    #inicio {
+        background-image: url(imagenss/home/background-home-tablet.jpg);
+        background-size: cover;
+    }
+
+    #destino {
+        background-image: url(imagenss/destination/background-destination-tablet.jpg);
+        background-size: cover;
+
+    }
+
+    #tripulaçao {
+        background-image: url(imagenss/crew/background-crew-tablet.jpg);
+        background-size: cover;
+    }
+
+    #technologia {
+        background-image: url(imagenss/technology/background-technology-tablet.jpg);
+        background-size: cover;
+    }
+
+    #main00 {
+
+        flex-direction: column;
+
+    }
+
+    #main00 h1 {
+        font-size: 60px;
+    }
+
+
+
+    .parte00-2 {
+        width: 100%;
+        height: 50vh;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+
+    .parte00-1 {
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+
+
+        .text00 {
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            flex-direction: column;
+            position: absolute;
+            top: 40%;
+            left: 0%;
+
+        }
+
+        .text00 p {
+            width: 85%;
+            line-height: 25px;
+            padding-top: 10px;
+            font-size: 15px;
+            text-align: center;
+        }
+    }
+
+    .bola {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        position: static;
+
+    }
+
+
+
+
+
+    #destino {
+        background-image: url(imagenss/destination/background-destination-tablet.jpg);
+        background-repeat: no-repeat;
+        top: 100%;
+    }
+
+    #main01 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .parte1-01 {
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+
+    }
+
+
+    .img-01 {
+        margin-top: 5px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+     
+    }
+
+    .img-01 img {
+        width: 250px;
+       
+    }
+
+    .slider1-01 {
+        width: 100%;
+        height: 850px;
+
+        display: flex;
+        overflow: hidden;
+        flex-direction: column;
+        position: static;
+
+    }
+
+    .slides1-01 {
+        width: 400%;
+        height: 250px;
+        display: flex;
+  
+
+    }
+
+    .planet {
+        width: 100%;
+        height: 250px;
+        transition: all 1s;
+        padding-left: 0%;
+    
+    }
+
+
+  
+    /* parte2-01 */
+
+    .parte2-01 {
+        width: 100%;
+        height: 40vh;
+        padding-top: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+
+
+    .slider2-01 {
+        width: 350px;
+        height: 250px;
+        position: static;
+    }
+
+
+    .slides2-01 {
+        width: 400%;
+        height: 250px;
+        display: flex;
+
+    }
+
+    .texto-01 h3,
+    p,
+    hr {
+        width: 100%;
+    }
+    .texto-01{
+        row-gap: 10px;
+    }
+    
+
+
+    #menu-01 {
+        position: static;
+        margin: 10px 0;
+
+    }
+
+
+
+
+
+
+    .parte1-01 h3 {
+        column-gap: 15px;
+        position: static;
+    }
+
+
+    #planet2 .img-01 {
+        margin-right: -2 00px;
+    }
+
+    .margin0 {
+        margin-left: -0%;
+            transition: all 1s;
+
+    }
+
+    .margin1 {
+        margin-left: -40%;
+            transition: all 1s;
+
+    }
+
+    .margin2 {
+        margin-left: -133%;
+            transition: all 1s;
+
+    }
+
+    .margin3 {
+        margin-left: -337%;
+            transition: all 1s;
+
+    }
+
+
+
+}
+
+@media screen and (max-width: 480px) {
+    #inicio {
+        background-image: url(imagenss/home/background-home-mobile.jpg);
+        background-size: cover;
+    }
+
+    #destino {
+        background-image: url(imagenss/destination/background-destination-mobile.jpg);
+        background-size: cover;
+
+    }
+
+    #tripulaçao {
+        background-image: url(imagenss/crew/background-crew-mobile.jpg);
+        background-size: cover;
+    }
+
+    #technologia {
+        background-image: url(imagenss/technology/background-technology-mobile.jpg);
+        background-size: cover;
+    }
+
+    header {
+        justify-content: center;
+        column-gap: 50px;
+
+        .mobile {
+            display: flex;
+        }
+
+        .close {
+            display: none;
+            cursor: pointer;
+        }
+
+        .burguer {
+            width: 40px;
+            cursor: pointer;
+        }
+
+        span {
+
+            font-size: 13px;
+
+        }
+
+        .separador {
+            display: none;
+        }
+
+        .logo {
+            height: 100%;
+            width: 46%;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo::after {
+            width: 100%;
+            margin-left: 0;
+            margin-right: -50px;
+
+        }
+
+        #nav {
+            display: none;
+        }
+
+
+
+    }
+
+    #inicio {
+        background-image: url(imagenss/home/background-home-tablet.jpg);
+        background-size: cover;
+         
+    }
+
+    #destino {
+        background-image: url(imagenss/destination/background-destination-tablet.jpg);
+        background-size: cover;
+
+    }
+
+    #tripulaçao {
+        background-image: url(imagenss/crew/background-crew-tablet.jpg);
+        background-size: cover;
+    }
+
+    #technologia {
+        background-image: url(imagenss/technology/background-technology-tablet.jpg);
+        background-size: cover;
+    }
+
+    #main00 {
+
+        flex-direction: column;
+
+    }
+
+    #main00 h1 {
+        font-size: 50px;
+    }
+
+
+
+    .parte00-2 {
+        width: 100%;
+        height: 50vh;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+
+    .parte00-1 {
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+
+        .text00 {
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            flex-direction: column;
+            position: absolute;
+            top: 40%;
+            left: 0%;
+            
+        }
+
+        .text00 p {
+            width: 75%;
+       
+            line-height: 25px;
+            padding-top: 10px;
+            font-size: 15px;
+            text-align: center;
+        }
+    }
+
+    .bola {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        position: static;
+
+    }
+
+
+
+
+
+    #destino {
+        background-image: url(imagenss/destination/background-destination-tablet.jpg);
+        background-repeat: no-repeat;
+        top: 100%;
+    }
+
+    #main01 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .parte1-01 {
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+        
+
+
+    }
+
+
+    .img-01 {
+        margin-top: 5px;
+        width: 100%;
+        height: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img-01 img {
+        width: 220px;
+        height: 100%;
+    }
+
+    .slider1-01 {
+        width: 100%;
+        height: 380px;
+        display: flex;
+        overflow: hidden;
+        flex-direction: column;
+        position: static;
+        
+
+    }
+
+    .slides1-01 {
+        width: 400%;
+        height: 380px;
+        display: flex;
+
+    }
+
+    .planet {
+        width: 100%;
+        height: 380px;
+        transition: all 1s;
+        
+    }
+
+
+    /* parte2-01 */
+
+    .parte2-01 {
+        width: 100%;
+        height: 50vh;
+        padding-top: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+
+
+    .slider2-01 {
+        width: 300px;
+        height: 250px;
+        position: static;
+        
+
+    }
+
+
+    .slides2-01 {
+        width: 400%;
+        height: 250px;
+        display: flex;
+
+    }
+    .texto-01{
+        width: 300px;
+        row-gap: 10px;
+    }
+
+
+    .texto-01 h3,
+    p,
+    hr {
+        width: 100%;
+        
+         
+    }
+ 
+
+
+
+
+    #menu-01 {
+        position: static;
+        
+    }
+   
+   
+
+
+
+
+
+
+
+    .parte1-01 h3 {
+        column-gap: 15px;
+        position: static;
+    }
+
+
+    #planet2 .img-01 {
+        margin-right: -2 00px;
+    }
+
+    .margin0 {
+        margin-left: -0%;
+
+    }
+
+    .margin1 {
+        margin-left: -40%;
+
+    }
+
+    .margin2 {
+        margin-left: -133%;
+
+    }
+
+    .margin3 {
+        margin-left: -337%;
+
+    }
+
+}
