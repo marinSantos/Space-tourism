@@ -1,13 +1,14 @@
 let home = document.getElementById('home')
 let destination = document.getElementById('destination')
-
+let cres = document.getElementById('crew')
 
 let explore = document.getElementById('explore')
 
 explore.addEventListener('click', function () {
-    window.scrollTo(0,1000)
+    window.scrollTo(0,1570)
      destination.classList.add('atual')
      home.classList.remove('atual')
+    crew.classList.remove('atual')
     
 })
 
@@ -15,8 +16,18 @@ explore.addEventListener('click', function () {
 home.addEventListener('click', function () {
     home.classList.add('atual')
     destination.classList.remove('atual')
-
+    crew.classList.remove('atual')
     window.scrollTo(0,0)
+
+
+})
+
+crew.addEventListener('click', function () {
+    crew.classList.add('atual')
+    destination.classList.remove('atual')
+    home.classList.remove('atual')
+
+    window.scrollTo(0,1570)
 
 
 })
@@ -27,7 +38,7 @@ destination.addEventListener('click', function () {
     destination.classList.add('atual')
     home.classList.remove('atual')
 
-    window.scrollTo(0,1000)
+    window.scrollTo(0,775)
 })
 
 
@@ -93,4 +104,65 @@ item301.addEventListener('click', function () {
     planet0.classList.remove('margin2')
 })
 
+// 02
+let item002 = document.getElementById('item0-02')
+let item102 = document.getElementById('item1-02')
+let item202 = document.getElementById('item2-02')
+let item302 = document.getElementById('item3-02')
+
+let primeiro202 = document.querySelector('.primeiro2-02')
+
+
+
+
+item002.addEventListener('click', function () {
+    item002.classList.add('active-02')
+    item102.classList.remove('active-02')
+    item202.classList.remove('active-02')
+    item302.classList.remove('active-02')
+    
+    primeiro202.classList.add('margin0-02')
+    primeiro202.classList.remove('margin1-02')
+    primeiro202.classList.remove('margin2-02')
+    primeiro202.classList.remove('margin3-02')
+
+})
+item102.addEventListener('click', function () {
+    item102.classList.add('active-02')
+    item002.classList.remove('active-02')
+    item202.classList.remove('active-02')
+    item302.classList.remove('active-02')
+     
+
+    primeiro202.classList.add('margin1-02')
+    primeiro202.classList.remove('margin0-02')
+    primeiro202.classList.remove('margin2-02')
+    primeiro202.classList.remove('margin3-02')
+
+})
+item202.addEventListener('click', function () {
+    item202.classList.add('active-02')
+    item002.classList.remove('active-02')
+    item102.classList.remove('active-02')
+    item302.classList.remove('active-02')
+
+    primeiro202.classList.add('margin2-02')
+    primeiro202.classList.remove('margin0-02')
+    primeiro202.classList.remove('margin1-02')
+    primeiro202.classList.remove('margin3-02')
+
+    
+})
+item302.addEventListener('click', function () {
+    item302.classList.add('active-02')
+    item002.classList.remove('active-02')
+    item102.classList.remove('active-02')
+    item202.classList.remove('active-02')
+
+    
+    primeiro202.classList.add('margin3-02')
+    primeiro202.classList.remove('margin0-02')
+    primeiro202.classList.remove('margin1-02')
+    primeiro202.classList.remove('margin2-02')
+})
 
