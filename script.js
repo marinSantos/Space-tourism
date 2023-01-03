@@ -1,11 +1,11 @@
 let home = document.getElementById('home')
 let destination = document.getElementById('destination')
-let cres = document.getElementById('crew')
+let crew = document.getElementById('crew')
 
 let explore = document.getElementById('explore')
 
 explore.addEventListener('click', function () {
-       window.scrollTo(0,775)
+
      destination.classList.add('atual')
      home.classList.remove('atual')
     crew.classList.remove('atual')
@@ -17,30 +17,29 @@ home.addEventListener('click', function () {
     home.classList.add('atual')
     destination.classList.remove('atual')
     crew.classList.remove('atual')
-    window.scrollTo(0,0)
+
 
 
 })
+
+destination.addEventListener('click', function () {
+
+    destination.classList.add('atual')
+    home.classList.remove('atual')
+    crew.classList.remove('atual')
+
+})
+
 
 crew.addEventListener('click', function () {
     crew.classList.add('atual')
     destination.classList.remove('atual')
     home.classList.remove('atual')
 
-    window.scrollTo(0,1570)
+
 
 
 })
-
-
-destination.addEventListener('click', function () {
-
-    destination.classList.add('atual')
-    home.classList.remove('atual')
-
-    window.scrollTo(0,775)
-})
-
 
 
 
@@ -164,5 +163,12 @@ item302.addEventListener('click', function () {
     primeiro202.classList.remove('margin0-02')
     primeiro202.classList.remove('margin1-02')
     primeiro202.classList.remove('margin2-02')
+})
+
+const mobile = document.getElementById('mobile')
+const nav = document.getElementById('nav')
+
+mobile.addEventListener('click',function(){
+nav.classList.toggle('mobile')
 })
 
