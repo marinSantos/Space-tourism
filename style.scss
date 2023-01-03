@@ -12,6 +12,15 @@ font-family: 'Ovo', serif;
 */
 
 /* Configirações gerais */
+
+
+
+
+.transition{
+    transition: all 1s !important ;
+}
+
+
 html {
     scroll-behavior: smooth;
 }
@@ -22,6 +31,7 @@ html {
     padding: 0;
     font-family: 'Barlow Condensed', sans-serif;
 }
+
 
 
 
@@ -683,25 +693,29 @@ input {
 
 .margin0 {
     margin-left: -0%;
-    transition: all 1s;
+    transition:  all 0s;
+    
 
 }
 
 .margin1 {
     margin-left: -33%;
-    transition: all 1s;
+    transition:  all 0s;
+    
 
 }
 
 .margin2 {
     margin-left: -100%;
-    transition: all 1s;
+    transition:  all 0s;
+    
 
 }
 
 .margin3 {
     margin-left: -300%;
-    transition: all 1s;
+    transition:  all 0s;
+    
 
 }
 
@@ -989,7 +1003,7 @@ input {
     .planet {
         width: 100%;
         height: 250px;
-        transition: all 1s;
+    
         padding-left: 0%;
 
     }
@@ -1060,25 +1074,29 @@ input {
 
     .margin0 {
         margin-left: -0%;
-        transition: all 1s;
+        transition:  all 0s;
+        
 
     }
 
     .margin1 {
         margin-left: -40%;
-        transition: all 1s;
+        transition:  all 0s;
+        
 
     }
 
     .margin2 {
         margin-left: -133%;
-        transition: all 1s;
+        transition:  all 0s;
+        
 
     }
 
     .margin3 {
         margin-left: -337%;
-        transition: all 1s;
+        transition:  all 0s;
+        
 
     }
 
@@ -1301,7 +1319,7 @@ input {
     .planet {
         width: 100%;
         height: 380px;
-        transition: all 1s;
+       
 
     }
 
@@ -1374,27 +1392,32 @@ input {
     }
 
 
-    #planet2 .img-01 {
-        margin-right: -2 00px;
-    }
+    
 
     .margin0 {
         margin-left: -0%;
+        transition:  all 0s;
+         
 
     }
 
     .margin1 {
         margin-left: -40%;
+        transition:  all 0s;
+        
 
     }
 
     .margin2 {
         margin-left: -133%;
+        transition:  all 0s;
+        
 
     }
 
     .margin3 {
         margin-left: -337%;
+         
 
     }
 
