@@ -25,6 +25,7 @@ html {
 
 body {
   background-color: black;
+  overflow: hidden;
 }
 
 h1,
@@ -70,7 +71,7 @@ header {
   position: fixed;
   z-index: 100;
 }
-header .mobile {
+header #mobile {
   display: none;
 }
 header span {
@@ -396,12 +397,13 @@ hr {
 }
 
 /* /* tripulaçao */
-.tripulaçao {
+#tripulaçao {
   background-image: url(imagenss/crew/background-crew-desktop.jpg);
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
   top: 200%;
+  display: none;
 }
 
 .main02 span {
@@ -667,14 +669,14 @@ input {
     -moz-column-gap: 50px;
          column-gap: 50px;
   }
-  header .mobile {
+  header #mobile {
     display: flex;
   }
-  header .close {
+  header #close {
     display: none;
     cursor: pointer;
   }
-  header .burguer {
+  header #burguer {
     width: 40px;
     cursor: pointer;
   }
@@ -696,7 +698,32 @@ input {
     margin-right: -50px;
   }
   header #nav {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 255, 0);
+    position: relative;
+    top: 230px;
+    left: 130px;
+    height: 400px;
+    width: 220px;
+    padding: 20px 20px;
+    visibility: hidden;
+  }
+  header #nav.mobile {
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+    position: relative;
+    top: 230px;
+    left: 130px;
+    height: 400px;
+    width: 220px;
+    padding: 20px 20px;
+    visibility: visible;
+  }
+  header #nav a,
+header span {
+    font-size: 25px;
   }
   #inicio {
     background-image: url(imagenss/home/background-home-tablet.jpg);
@@ -863,6 +890,30 @@ hr {
   }
 }
 @media screen and (max-width: 480px) {
+  #nav {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 255, 0);
+    position: relative;
+    top: 230px;
+    left: 130px;
+    height: 400px;
+    width: 220px;
+    padding: 20px 20px;
+    visibility: hidden;
+  }
+  #nav.mobile {
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+    position: relative;
+    top: 230px;
+    left: 130px;
+    height: 400px;
+    width: 220px;
+    padding: 20px 20px;
+    visibility: visible;
+  }
   #inicio {
     background-image: url(imagenss/home/background-home-mobile.jpg);
     background-size: cover;
@@ -884,14 +935,14 @@ hr {
     -moz-column-gap: 50px;
          column-gap: 50px;
   }
-  header .mobile {
+  header #mobile {
     display: flex;
   }
-  header .close {
+  header #close {
     display: none;
     cursor: pointer;
   }
-  header .burguer {
+  header #burguer {
     width: 40px;
     cursor: pointer;
   }
@@ -914,22 +965,6 @@ hr {
   }
   header #nav {
     display: none;
-  }
-  #inicio {
-    background-image: url(imagenss/home/background-home-tablet.jpg);
-    background-size: cover;
-  }
-  #destino {
-    background-image: url(imagenss/destination/background-destination-tablet.jpg);
-    background-size: cover;
-  }
-  #tripulaçao {
-    background-image: url(imagenss/crew/background-crew-tablet.jpg);
-    background-size: cover;
-  }
-  #technologia {
-    background-image: url(imagenss/technology/background-technology-tablet.jpg);
-    background-size: cover;
   }
   #main00 {
     flex-direction: column;
@@ -973,11 +1008,6 @@ hr {
     height: 100%;
     display: flex;
     position: static;
-  }
-  #destino {
-    background-image: url(imagenss/destination/background-destination-tablet.jpg);
-    background-repeat: no-repeat;
-    top: 100%;
   }
   #main01 {
     display: flex;
