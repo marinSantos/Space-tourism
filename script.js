@@ -5,7 +5,10 @@ let destination = document.getElementById('destination')
 let explore = document.getElementById('explore')
 
 explore.addEventListener('click', function () {
-    window.scrollTo(1280,0)
+    window.scrollTo(0,1000)
+     destination.classList.add('atual')
+     home.classList.remove('atual')
+    
 })
 
 
@@ -15,6 +18,7 @@ home.addEventListener('click', function () {
 
     window.scrollTo(0,0)
 
+
 })
 
 
@@ -23,7 +27,7 @@ destination.addEventListener('click', function () {
     destination.classList.add('atual')
     home.classList.remove('atual')
 
-    window.scrollTo(1280,0)
+    window.scrollTo(0,1000)
 })
 
 
