@@ -5,7 +5,7 @@ let cres = document.getElementById('crew')
 let explore = document.getElementById('explore')
 
 explore.addEventListener('click', function () {
-    window.scrollTo(0,1570)
+       window.scrollTo(0,775)
      destination.classList.add('atual')
      home.classList.remove('atual')
     crew.classList.remove('atual')
