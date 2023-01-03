@@ -26,8 +26,8 @@ html {
 
 
 body {
-background-color: black;
-
+    background-color: black;
+ overflow: hidden;
 }
 
 h1,
@@ -73,7 +73,7 @@ header {
     position: fixed;
     z-index: 100;
 
-    .mobile {
+    #mobile {
         display: none;
     }
 
@@ -137,7 +137,7 @@ header {
         cursor: pointer;
     }
 
- .atual {
+    .atual {
         border-bottom: solid 1px white !important;
     }
 
@@ -331,7 +331,7 @@ header {
     width: 400%;
     height: 400px;
     display: flex;
-   
+
 
 }
 
@@ -340,7 +340,7 @@ header {
     height: 450px;
     padding-left: 120px;
 
- 
+
 }
 
 
@@ -352,7 +352,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 
@@ -443,12 +443,13 @@ hr {
 }
 
 /* /* tripulaçao */
-.tripulaçao{
+#tripulaçao {
     background-image: url(imagenss/crew/background-crew-desktop.jpg);
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
     top: 200%;
+    display: none
 }
 
 .main02 span {
@@ -459,7 +460,7 @@ hr {
 
 .main02 {
     width: 100%;
-    
+
 }
 
 .parte1-02 {
@@ -577,7 +578,8 @@ hr {
     margin-top: 50px;
 
 }
-.crew4{
+
+.crew4 {
     margin-top: 50px;
 }
 
@@ -623,19 +625,19 @@ input {
 }
 
 
-#radio0-1-02:checked~.primeiro-02{
+#radio0-1-02:checked~.primeiro-02 {
     margin-left: 0%;
 }
 
-#radio1-1-02:checked~.primeiro-02{
+#radio1-1-02:checked~.primeiro-02 {
     margin-left: -25%;
 }
 
-#radio2:checked~.primeiro-02{
+#radio2:checked~.primeiro-02 {
     margin-left: -50%;
 }
 
-#radio3-1-02:checked~.primeiro-02{
+#radio3-1-02:checked~.primeiro-02 {
     margin-left: -75%;
 }
 
@@ -681,25 +683,25 @@ input {
 
 .margin0 {
     margin-left: -0%;
-        transition: all 1s;
+    transition: all 1s;
 
 }
 
 .margin1 {
     margin-left: -33%;
-        transition: all 1s;
+    transition: all 1s;
 
 }
 
 .margin2 {
     margin-left: -100%;
-        transition: all 1s;
+    transition: all 1s;
 
 }
 
 .margin3 {
     margin-left: -300%;
-        transition: all 1s;
+    transition: all 1s;
 
 }
 
@@ -764,25 +766,25 @@ input {
         right: 2%;
     }
 
-    
+
 }
 
-@media screen and (max-width:845px){
+@media screen and (max-width:845px) {
 
     header {
         justify-content: center;
         column-gap: 50px;
 
-        .mobile {
+        #mobile {
             display: flex;
         }
 
-        .close {
+        #close {
             display: none;
             cursor: pointer;
         }
 
-        .burguer {
+        #burguer {
             width: 40px;
             cursor: pointer;
         }
@@ -812,10 +814,35 @@ input {
         }
 
         #nav {
-            display: none;
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(0, 0, 255, 0);
+            position: relative;
+            top: 230px;
+            left: 130px;
+            height: 400px;
+            width: 220px;
+            padding: 20px 20px;
+            visibility: hidden;
         }
 
+        #nav.mobile {
+            display: flex;
+            flex-direction: column;
+            background-color: blue;
+            position: relative;
+            top: 230px;
+            left: 130px;
+            height: 400px;
+            width: 220px;
+            padding: 20px 20px;
+             visibility: visible;
+        }
 
+        #nav a,
+        span {
+            font-size: 25px;
+        }
 
     }
 
@@ -932,12 +959,12 @@ input {
         align-items: center;
         justify-content: center;
 
-     
+
     }
 
     .img-01 img {
         width: 250px;
-       
+
     }
 
     .slider1-01 {
@@ -955,7 +982,7 @@ input {
         width: 400%;
         height: 250px;
         display: flex;
-  
+
 
     }
 
@@ -964,11 +991,11 @@ input {
         height: 250px;
         transition: all 1s;
         padding-left: 0%;
-    
+
     }
 
 
-  
+
     /* parte2-01 */
 
     .parte2-01 {
@@ -1003,10 +1030,11 @@ input {
     hr {
         width: 100%;
     }
-    .texto-01{
+
+    .texto-01 {
         row-gap: 10px;
     }
-    
+
 
 
     #menu-01 {
@@ -1032,25 +1060,25 @@ input {
 
     .margin0 {
         margin-left: -0%;
-            transition: all 1s;
+        transition: all 1s;
 
     }
 
     .margin1 {
         margin-left: -40%;
-            transition: all 1s;
+        transition: all 1s;
 
     }
 
     .margin2 {
         margin-left: -133%;
-            transition: all 1s;
+        transition: all 1s;
 
     }
 
     .margin3 {
         margin-left: -337%;
-            transition: all 1s;
+        transition: all 1s;
 
     }
 
@@ -1059,6 +1087,31 @@ input {
 }
 
 @media screen and (max-width: 480px) {
+    #nav {
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(0, 0, 255, 0);
+            position: relative;
+            top: 230px;
+            left: 130px;
+            height: 400px;
+            width: 220px;
+            padding: 20px 20px;
+            visibility: hidden;
+        }
+
+        #nav.mobile {
+            display: flex;
+            flex-direction: column;
+            background-color: blue;
+            position: relative;
+            top: 230px;
+            left: 130px;
+            height: 400px;
+            width: 220px;
+            padding: 20px 20px;
+             visibility: visible;
+        }
     #inicio {
         background-image: url(imagenss/home/background-home-mobile.jpg);
         background-size: cover;
@@ -1084,16 +1137,16 @@ input {
         justify-content: center;
         column-gap: 50px;
 
-        .mobile {
+        #mobile {
             display: flex;
         }
 
-        .close {
+        #close {
             display: none;
             cursor: pointer;
         }
 
-        .burguer {
+        #burguer {
             width: 40px;
             cursor: pointer;
         }
@@ -1130,27 +1183,7 @@ input {
 
     }
 
-    #inicio {
-        background-image: url(imagenss/home/background-home-tablet.jpg);
-        background-size: cover;
-         
-    }
 
-    #destino {
-        background-image: url(imagenss/destination/background-destination-tablet.jpg);
-        background-size: cover;
-
-    }
-
-    #tripulaçao {
-        background-image: url(imagenss/crew/background-crew-tablet.jpg);
-        background-size: cover;
-    }
-
-    #technologia {
-        background-image: url(imagenss/technology/background-technology-tablet.jpg);
-        background-size: cover;
-    }
 
     #main00 {
 
@@ -1189,12 +1222,12 @@ input {
             position: absolute;
             top: 40%;
             left: 0%;
-            
+
         }
 
         .text00 p {
             width: 75%;
-       
+
             line-height: 25px;
             padding-top: 10px;
             font-size: 15px;
@@ -1214,11 +1247,6 @@ input {
 
 
 
-    #destino {
-        background-image: url(imagenss/destination/background-destination-tablet.jpg);
-        background-repeat: no-repeat;
-        top: 100%;
-    }
 
     #main01 {
         display: flex;
@@ -1232,7 +1260,7 @@ input {
         flex-direction: column;
         align-items: center;
         padding-top: 100px;
-        
+
 
 
     }
@@ -1259,7 +1287,7 @@ input {
         overflow: hidden;
         flex-direction: column;
         position: static;
-        
+
 
     }
 
@@ -1274,7 +1302,7 @@ input {
         width: 100%;
         height: 380px;
         transition: all 1s;
-        
+
     }
 
 
@@ -1297,7 +1325,7 @@ input {
         width: 300px;
         height: 250px;
         position: static;
-        
+
 
     }
 
@@ -1308,7 +1336,8 @@ input {
         display: flex;
 
     }
-    .texto-01{
+
+    .texto-01 {
         width: 300px;
         row-gap: 10px;
     }
@@ -1318,20 +1347,20 @@ input {
     p,
     hr {
         width: 100%;
-        
-         
+
+
     }
- 
+
 
 
 
 
     #menu-01 {
         position: static;
-        
+
     }
-   
-   
+
+
 
 
 
