@@ -11,14 +11,16 @@
     <title>Turismo Espacial</title>
 </head>
 
-<body>
+<body id="H">
 
     <header>
         <div class="logo"><img src="imagenss/shared/logo.svg" alt=""></div>
         <div class="separador"></div>
-        <nav id="nav"><a id="home">00<span>HOME</span></a><a id="destination">01<span>DESTINATION</span></a><a
-                id="crew">02<span>CREW</span></a><a id="technology">03<span>TECHNOLOGY</span></a></nav>
-        <div class="mobile"><img class="burguer" src="imagenss/shared/icon-hamburger.svg" alt=""> <img class="close"
+        <nav id="nav"><a href="#H" id="home">00<span>HOME</span></a>
+            <a href="#D" id="destination">01<span>DESTINATION</span></a>
+            <a href="#C" id="crew">02<span>CREW</span></a><a id="technology">03<span>TECHNOLOGY</span></a>
+        </nav>
+        <div id="mobile"><img id="burguer" src="imagenss/shared/icon-hamburger.svg" alt=""> <img id="close"
                 src="imagenss/shared/icon-close.svg" alt=""></div>
     </header>
     <div class="mainSlider">
@@ -41,7 +43,7 @@
 
                     <div class="parte00-2">
                         <div class="bola">
-                            <a id="explore">
+                            <a href="#D" id="explore">
                                 <h2>EXPLORE</h2>
                             </a>
                         </div>
@@ -51,7 +53,10 @@
             </div>
 
             <!--PARTE 01-->
+
+           
             <div id="destino" class="sessao ">
+                <div class="div" id="D"></div>
                 <main id="main01">
                     <div class="parte1-01">
                         <h3><span>01</span>PICK UO YOUR DESTINATION</h3>
@@ -190,8 +195,10 @@
 
                 </main>
             </div>
+            
             <!--PARTE 02-->
-            <div class="sessao tripulaçao">
+            <div id="tripulaçao" class="sessao ">
+                <div class="div" id="C"></div>
                 <main id="main02">
                     <div class="parte1-02">
                         <h3><span>02</span>MEET YOUR CREW</h3>
