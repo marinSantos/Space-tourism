@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -15,10 +15,9 @@
 
     <header>
         <div class="logo"><img src="imagenss/shared/logo.svg" alt=""></div>
-        <div class="separador"></div>
-        <nav id="nav"><a href="#H" id="home">00<span>HOME</span></a>
+        <nav id="nav"><a class="atual" href="#H" id="home">00<span>HOME</span></a>
             <a href="#D" id="destination">01<span>DESTINATION</span></a>
-            <a href="#C" id="crew">02<span>CREW</span></a><a id="technology">03<span>TECHNOLOGY</span></a>
+            <a href="#C" id="crew">02<span>CREW</span></a><a href="#T" id="technology">03<span>TECHNOLOGY</span></a>
         </nav>
         <div id="mobile"><img id="burguer" src="imagenss/shared/icon-hamburger.svg" alt=""> <img id="close"
                 src="imagenss/shared/icon-close.svg" alt=""></div>
@@ -54,7 +53,7 @@
 
             <!--PARTE 01-->
 
-           
+
             <div id="destino" class="sessao ">
                 <div class="div" id="D"></div>
                 <main id="main01">
@@ -195,7 +194,7 @@
 
                 </main>
             </div>
-            
+
             <!--PARTE 02-->
             <div id="tripulaçao" class="sessao ">
                 <div class="div" id="C"></div>
@@ -270,8 +269,73 @@
                 </main>
             </div>
             <!--PARTE 03-->
-            <div class="sessao tech">
+            <div id="tech" class="sessao">
+                <div id="T"></div>
 
+                <main id="main03">
+                    <div class="parte1-03">
+                        <h3><span>03</span>SPACE LAUNCH 101</h3>
+                        <div class="labelSlider-03">
+                            <div class="labels-03">
+                                <label for="radio0-03" class="manualBtn-03 active-03" id="item0-03">1 </label>
+                                <label for="radio1-03" class="manualBtn-03" id="item1-03"> 2</label>
+                                <label for="radio2-03" class="manualBtn-03" id="item2-03">3 </label>
+                            </div>
+
+                            <div class="slider-03">
+                                <div class="slides-03">
+                                    <input type="radio" name="radioBtn-03" id="radio0-03">
+                                    <input type="radio" name="radioBtn-03" id="radio1-03">
+                                    <input type="radio" name="radioBtn-03" id="radio2-03">
+                                    <div class="primeiro-03 texto-03">
+                                        <h2>THE TERMINOLOGY...</h2>
+                                        <h1>LAUCH VEHICLE</h1>
+                                        <br>
+                                        <p>A launch vehicle or carrier rocket is a rocket-propelled vehicle used to
+                                            carry a
+                                            payload from Earth's surface to space, usually to Earth orbit or beyond. Our
+                                            WEB-X carrier rocket is the most powerful in operation. Standing 150 metres
+                                            tall,
+                                            it's quite an awe-inspiring sight on the launch pad!</p>
+                                    </div>
+                                    <div class=" texto-03">
+                                        <h2>THE TERMINOLOGY...</h2>
+                                        <h1>SPACEPORT</h1>
+                                        <br>
+                                        <p> A spaceport or cosmodrome is a site for launching (or receiving) spacecraft,
+                                            by analogy to the seaport for ships or airport for aircraft. Based in the
+                                            famous Cape Canaveral, our spaceport is ideally situated to take advantage
+                                            of the Earth’s rotation for launch.</p>
+                                    </div>
+                                    <div class=" texto-03">
+                                        <h2>THE TERMINOLOGY...</h2>
+                                        <h1>SPACE CAPSULE</h1>
+                                        <br>
+                                        <p>A space capsule is an often-crewed spacecraft that uses a blunt-body reentry
+                                            capsule to reenter the Earth's atmosphere without wings. Our capsule is
+                                            where
+                                            you'll spend your time during the flight. It includes a space gym, cinema,
+                                            and plenty of other activities to keep you entertained.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="parte2-03">
+
+                        <div class="slider2-03">
+                            <div class="slides2-03">
+                                <div class="primeiro2-03 img-03">
+                                    <img src="imagenss/technology/image-launch-vehicle-portrait.jpg" alt="">
+                                    <img src="imagenss/technology/image-spaceport-portrait.jpg" alt="">
+                                    <img src="imagenss/technology/image-space-capsule-portrait.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </main>
             </div>
         </div>
     </div>
