@@ -25,6 +25,7 @@ html {
     scroll-behavior: smooth;
 }
 
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -687,7 +688,7 @@ hr {
 
 .slider-03 {
     width: 380px;
-    height: 350px;
+    height: 400px;
     overflow: hidden;
     display: flex;
     position: absolute;
@@ -857,7 +858,7 @@ input {
     margin-left: -25%;
 }
 
-#radio2:checked~.primeiro-02 {
+#radio2-1-02:checked~.primeiro-02 {
     margin-left: -50%;
 }
 
@@ -1170,6 +1171,7 @@ input {
         width: 250px;
         height: 100%;
         display: flex;
+        padding-top: 20px;
 
     }
     
