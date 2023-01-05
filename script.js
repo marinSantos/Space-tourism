@@ -1,3 +1,13 @@
+function backToHome(){
+    window.scroll(0,0)
+    home.classList.add('atual')
+    destination.classList.remove('atual')
+    crew.classList.remove('atual')
+    tech.classList.remove('atual')
+
+}
+
+
 let home = document.getElementById('home')
 let destination = document.getElementById('destination')
 let crew = document.getElementById('crew')
@@ -6,7 +16,6 @@ let tech = document.getElementById('technology')
 let explore = document.getElementById('explore')
 
 explore.addEventListener('click', function () {
-
      destination.classList.add('atual')
      home.classList.remove('atual')
     crew.classList.remove('atual')
@@ -19,7 +28,6 @@ home.addEventListener('click', function () {
     destination.classList.remove('atual')
     crew.classList.remove('atual')
     tech.classList.remove('atual')
-
 
 })
 
