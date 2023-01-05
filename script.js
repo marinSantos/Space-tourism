@@ -1,6 +1,7 @@
 let home = document.getElementById('home')
 let destination = document.getElementById('destination')
 let crew = document.getElementById('crew')
+let tech = document.getElementById('technology')
 
 let explore = document.getElementById('explore')
 
@@ -17,7 +18,7 @@ home.addEventListener('click', function () {
     home.classList.add('atual')
     destination.classList.remove('atual')
     crew.classList.remove('atual')
-
+    tech.classList.remove('atual')
 
 
 })
@@ -27,17 +28,30 @@ destination.addEventListener('click', function () {
     destination.classList.add('atual')
     home.classList.remove('atual')
     crew.classList.remove('atual')
+    tech.classList.remove('atual')
 
 })
+
+
 
 
 crew.addEventListener('click', function () {
     crew.classList.add('atual')
     destination.classList.remove('atual')
     home.classList.remove('atual')
+    tech.classList.remove('atual')
 
 
 
+
+})
+
+tech.addEventListener('click', function () {
+
+    tech.classList.add('atual')
+    home.classList.remove('atual')
+    crew.classList.remove('atual')
+    destination.classList.remove('atual')
 
 })
 
@@ -209,4 +223,53 @@ mobile.addEventListener('click',function(){
 nav.classList.toggle('mobile')
 })
 
+
+//3
+
+let item0_03 = document.getElementById('item0-03')
+let item1_03 = document.getElementById('item1-03')
+let item2_03 = document.getElementById('item2-03')
+
+let primeiro2_03 = document.querySelector('.primeiro2-03')
+
+
+
+
+item0_03.addEventListener('click', function () {
+    item0_03.classList.add('active03')
+    item1_03.classList.remove('active03')
+    item2_03.classList.remove('active03')
+    
+    
+    primeiro2_03.classList.add('margin0-03')
+    primeiro2_03.classList.remove('margin1-03')
+    primeiro2_03.classList.remove('margin2-03')
+
+
+})
+item1_03.addEventListener('click', function () {
+    item1_03.classList.add('active03')
+    item0_03.classList.remove('active03')
+    item2_03.classList.remove('active03')
+    
+     
+
+    primeiro2_03.classList.add('margin1-03')
+    primeiro2_03.classList.remove('margin0-03')
+    primeiro2_03.classList.remove('margin2-03')
+
+
+})
+item2_03.addEventListener('click', function () {
+    item2_03.classList.add('active03')
+    item0_03.classList.remove('active03')
+    item1_03.classList.remove('active03')
+    
+
+    primeiro2_03.classList.add('margin2-03')
+    primeiro2_03.classList.remove('margin0-03')
+    primeiro2_03.classList.remove('margin1-03')
+
+    
+})
 
