@@ -476,9 +476,10 @@ hr {
     display: flex;
 
 }
+
 .parte1-02 {
     width: 50%;
-    
+
 }
 
 .parte1-02 h3 {
@@ -628,13 +629,13 @@ hr {
 
 /*/* 01 Technologia */
 
-#tech{
+#tech {
     background-image: url(imagenss/technology/background-technology-desktop.jpg);
     background-size: cover;
     top: 300%;
 }
 
-#main03{
+#main03 {
     display: flex;
     width: 100%;
 }
@@ -664,9 +665,10 @@ hr {
     left: 12%;
     top: 25%;
 }
+
 #main03 h1 {
     font-family: 'Ovo', serif;
-    font-size: 42px;
+    font-size: 35px;
     font-weight: 100;
     padding-top: 10px;
 }
@@ -718,7 +720,7 @@ hr {
 
 
 
-.labels-03{
+.labels-03 {
     color: white;
     display: flex;
     flex-direction: column;
@@ -728,7 +730,7 @@ hr {
     top: 38%;
 }
 
-.labels-03 label{
+.labels-03 label {
     border-radius: 50%;
     height: 60px;
     width: 60px;
@@ -772,7 +774,8 @@ hr {
     height: 100%;
     display: flex;
 }
-.img-02 img{
+
+.img-02 img {
     width: 100%;
 }
 
@@ -781,7 +784,7 @@ hr {
 
 
 
-#main03 input{
+#main03 input {
     display: none;
 }
 
@@ -886,14 +889,14 @@ input {
 
 }
 
-.active03{
+.active03 {
     background-color: white !important;
     color: black;
     transition: all 1s;
 }
 
 
-.parte2-03{
+.parte2-03 {
     width: 50%;
 }
 
@@ -913,26 +916,27 @@ input {
 
 .margin0-03 {
     margin-left: -0%;
-    
+
 }
 
 .margin1-03 {
     margin-left: -40%;
-    
+
 }
 
 .margin2-03 {
     margin-left: -76%;
-    
+
 }
 
 @media screen and (max-width: 1078px) {
     .slider2-02 {
         right: 0%;
     }
-.slider2-03 {
-    right: 0%;
-}
+
+    .slider2-03 {
+        right: 0%;
+    }
 
 
 
@@ -995,38 +999,41 @@ input {
 }
 
 @media screen and (max-width:845px) {
+    p{
+        line-height: 20px !important;
+    }
     /*/*Technologia*/
     #radio0-03:checked~.primeiro-03 {
         margin-left: 0%;
     }
-    
+
     #radio1-03:checked~.primeiro-03 {
         margin-left: -33%;
     }
-    
+
     #radio2-03:checked~.primeiro-03 {
         margin-left: -66%;
     }
 
 
-    #tech{
+    #tech {
         background-image: url(imagenss/technology/background-technology-tablet.jpg);
     }
-    
-    #main03{
+
+    #main03 {
         display: flex;
         flex-direction: column;
         width: 100%;
     }
-    
-    
-    
+
+
+
     .parte1-03 span {
         font-size: 20px;
         color: rgba(255, 255, 255, 0.527);
         letter-spacing: 3px;
     }
-    
+
     .parte1-03 {
         width: 100%;
         height: 60vh;
@@ -1034,11 +1041,11 @@ input {
         flex-direction: column;
         align-items: center;
         padding-top: 120px;
-      
-      
+
+
     }
-    
-    
+
+
     .parte1-03 h3 {
         color: rgb(255, 255, 255);
         font-weight: 400;
@@ -1049,19 +1056,20 @@ input {
         letter-spacing: 3px;
         position: static;
     }
+
     #main03 h1 {
         font-family: 'Ovo', serif;
         font-size: 35px;
         font-weight: 100;
         padding-top: 0px;
     }
-    
+
     .texto-03 p {
         margin-top: 5px;
         letter-spacing: 2px;
         line-height: 25px;
     }
-    
+
     .texto-03 h2 {
         color: rgba(255, 255, 255, 0.623);
         font-family: 'Ovo', serif;
@@ -1069,8 +1077,8 @@ input {
         font-size: 14px;
         letter-spacing: 1px;
     }
-    
-    
+
+
     .slider-03 {
         width: 370px;
         height: 250px;
@@ -1080,32 +1088,32 @@ input {
         font-size: 13px;
         margin-top: 10px;
 
-    
+
     }
-    
-    
+
+
     .slides-03 {
         width: 1390px;
         height: 100%;
         display: flex;
         row-gap: 20px;
-    
+
     }
-    
+
     .texto-03 {
         width: 370px;
         height: 100%;
         display: flex;
         flex-direction: column;
         text-align: center;
-     
+
     }
-    
-    
-    
-    
-    
-    .labels-03{
+
+
+
+
+
+    .labels-03 {
         color: white;
         display: flex;
         flex-direction: row;
@@ -1115,10 +1123,10 @@ input {
         justify-content: center;
         width: 100%;
         margin-top: 20px;
- 
+
     }
-    
-    .labels-03 label{
+
+    .labels-03 label {
         border-radius: 50%;
         height: 60px;
         width: 60px;
@@ -1130,26 +1138,26 @@ input {
         justify-content: center;
         font-size: 20px;
         font-family: 'Barlow Condensed', sans-serif;
-     
+
     }
-    
-    
-    
-    .parte2-03{
+
+
+
+    .parte2-03 {
         width: 100%;
-          height: 40vh;
+        height: 40vh;
         display: flex;
         align-items: center;
         justify-content: center;
         padding-top: 20px;
     }
-    
-    
+
+
     .parte2-03 img {
         margin-top: 10px;
         width: 99%;
     }
-    
+
     .slider2-03 {
         width: 250px;
         height: 250px;
@@ -1157,16 +1165,16 @@ input {
         overflow: hidden;
         flex-direction: column;
         position: static;
-  
-        
+
+
     }
-    
+
     .slides2-03 {
         width: 750px;
         height: 250px;
-        display: flex;  
+        display: flex;
     }
-    
+
     .img-03 {
         width: 250px;
         height: 100%;
@@ -1174,26 +1182,26 @@ input {
         padding-top: 20px;
 
     }
-    
-    
-    
-.margin0-03 {
-    margin-left: -0%;
-    
-}
 
-.margin1-03 {
-    margin-left: -33%;
-    
-}
 
-.margin2-03 {
-    margin-left: -66%;
-}
-   
-    
-    
-    #main03 input{
+
+    .margin0-03 {
+        margin-left: -0%;
+
+    }
+
+    .margin1-03 {
+        margin-left: -33%;
+
+    }
+
+    .margin2-03 {
+        margin-left: -66%;
+    }
+
+
+
+    #main03 input {
         display: none;
     }
 
@@ -1301,7 +1309,7 @@ input {
     }
 
     #main00 h1 {
-        font-size: 60px;
+        font-size: 35px;
     }
 
 
@@ -1716,6 +1724,9 @@ body {
 
 
 @media screen and (max-width: 480px) {
+    p{
+        line-height: 15px !important;
+    }
     #nav {
         display: flex;
         flex-direction: column;
@@ -1777,7 +1788,7 @@ body {
     }
 
     #main00 h1 {
-        font-size: 50px;
+        font-size: 35px;
     }
 
 
@@ -1836,6 +1847,10 @@ body {
     #main01 {
         display: flex;
         flex-direction: column;
+    }
+
+    #main01 h1{
+        font-size: 20px;
     }
 
     .parte1-01 {
@@ -2097,9 +2112,9 @@ body {
     }
 
 
-    .main02 h1 {
+    #main02 h1 {
         font-family: 'Ovo', serif;
-        font-size: 25px !important;
+        font-size: 20px !important;
         font-weight: 100;
     }
 
@@ -2125,26 +2140,26 @@ body {
 
     }
 
-/*/*Technologia*/
+    /*/*Technologia*/
 
-    #tech{
+    #tech {
         background-image: url(imagenss/technology/background-technology-mobile.jpg);
     }
-    
-    #main03{
+
+    #main03 {
         display: flex;
         flex-direction: column;
         width: 100%;
     }
-    
-    
-    
+
+
+
     .parte1-03 span {
         font-size: 20px;
         color: rgba(255, 255, 255, 0.527);
         letter-spacing: 3px;
     }
-    
+
     .parte1-03 {
         width: 100%;
         height: 60vh;
@@ -2152,11 +2167,11 @@ body {
         flex-direction: column;
         align-items: center;
         padding-top: 120px;
-      
-      
+
+
     }
-    
-    
+
+
     .parte1-03 h3 {
         color: rgb(255, 255, 255);
         font-weight: 400;
@@ -2167,19 +2182,19 @@ body {
         letter-spacing: 3px;
         position: static;
     }
+
     #main03 h1 {
         font-family: 'Ovo', serif;
-        font-size: 35px;
+        font-size: 20px !important;
         font-weight: 100;
         padding-top: 0px;
     }
-    
+
     .texto-03 p {
-        margin-top: 5px;
+        margin-top: 2px;
         letter-spacing: 2px;
-        line-height: 25px;
     }
-    
+
     .texto-03 h2 {
         color: rgba(255, 255, 255, 0.623);
         font-family: 'Ovo', serif;
@@ -2187,8 +2202,8 @@ body {
         font-size: 14px;
         letter-spacing: 1px;
     }
-    
-    
+
+
     .slider-03 {
         width: 300px;
         height: 250px;
@@ -2196,36 +2211,34 @@ body {
         display: flex;
         position: static;
         align-items: center;
-        justify-content: center;  
-        font-size: 13px;
+        font-size: 12px;
         margin-top: 10px;
 
-    
     }
-    
-    
+
+
     .slides-03 {
-        width: 300%;
-        height: 100%;
+        width: 900px;
+        height: 250px;
         display: flex;
         row-gap: 20px;
-    
+
     }
-    
+
     .texto-03 {
-        width: 300px;
-        height: 100%;
+        width: 295px;
+        height: 250px;
         display: flex;
         flex-direction: column;
         text-align: center;
-     
+
     }
-    
-    
-    
-    
-    
-    .labels-03{
+
+
+
+
+
+    .labels-03 {
         color: white;
         display: flex;
         flex-direction: row;
@@ -2235,10 +2248,10 @@ body {
         justify-content: center;
         width: 100%;
         margin-top: 20px;
- 
+
     }
-    
-    .labels-03 label{
+
+    .labels-03 label {
         border-radius: 50%;
         height: 50px;
         width: 50px;
@@ -2250,26 +2263,26 @@ body {
         justify-content: center;
         font-size: 20px;
         font-family: 'Barlow Condensed', sans-serif;
-     
+
     }
-    
-    
-    
-    .parte2-03{
+
+
+
+    .parte2-03 {
         width: 100%;
-          height: 40vh;
+        height: 40vh;
         display: flex;
         align-items: center;
         justify-content: center;
-        padding-top: 20px;
+        padding-top: 0px;
     }
-    
-    
+
+
     .parte2-03 img {
         margin-top: 0px;
         width: 99%;
     }
-    
+
     .slider2-03 {
         width: 250px;
         height: 250px;
@@ -2277,29 +2290,29 @@ body {
         overflow: hidden;
         flex-direction: column;
         position: static;
-  
-        
+
+
     }
-    
+
     .slides2-03 {
         width: 750px;
         height: 250px;
-        display: flex;  
+        display: flex;
     }
-    
+
     .img-03 {
         width: 250px;
         height: 100%;
         display: flex;
         align-items: center;
     }
-    
-    
-    
-   
-    
-    
-    #main03 input{
+
+
+
+
+
+
+    #main03 input {
         display: none;
     }
 }
