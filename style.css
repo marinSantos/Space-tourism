@@ -588,7 +588,7 @@ hr {
 
 #main03 h1 {
   font-family: "Ovo", serif;
-  font-size: 42px;
+  font-size: 35px;
   font-weight: 100;
   padding-top: 10px;
 }
@@ -839,6 +839,9 @@ input {
   }
 }
 @media screen and (max-width: 845px) {
+  p {
+    line-height: 20px !important;
+  }
   /*/*Technologia*/
   #radio0-03:checked ~ .primeiro-03 {
     margin-left: 0%;
@@ -1071,7 +1074,7 @@ header span {
     flex-direction: column;
   }
   #main00 h1 {
-    font-size: 60px;
+    font-size: 35px;
   }
   .parte00-2 {
     width: 100%;
@@ -1366,6 +1369,9 @@ body {
 }
 
 @media screen and (max-width: 480px) {
+  p {
+    line-height: 15px !important;
+  }
   #nav {
     display: flex;
     flex-direction: column;
@@ -1414,7 +1420,7 @@ body {
     flex-direction: column;
   }
   #main00 h1 {
-    font-size: 50px;
+    font-size: 35px;
   }
   .parte00-2 {
     width: 100%;
@@ -1456,6 +1462,9 @@ body {
   #main01 {
     display: flex;
     flex-direction: column;
+  }
+  #main01 h1 {
+    font-size: 20px;
   }
   .parte1-01 {
     width: 100%;
@@ -1627,9 +1636,9 @@ hr {
     display: flex;
     align-items: center;
   }
-  .main02 h1 {
+  #main02 h1 {
     font-family: "Ovo", serif;
-    font-size: 25px !important;
+    font-size: 20px !important;
     font-weight: 100;
   }
   .main02 h2 {
@@ -1684,14 +1693,13 @@ hr {
   }
   #main03 h1 {
     font-family: "Ovo", serif;
-    font-size: 35px;
+    font-size: 20px !important;
     font-weight: 100;
     padding-top: 0px;
   }
   .texto-03 p {
-    margin-top: 5px;
+    margin-top: 2px;
     letter-spacing: 2px;
-    line-height: 25px;
   }
   .texto-03 h2 {
     color: rgba(255, 255, 255, 0.623);
@@ -1707,19 +1715,18 @@ hr {
     display: flex;
     position: static;
     align-items: center;
-    justify-content: center;
-    font-size: 13px;
+    font-size: 12px;
     margin-top: 10px;
   }
   .slides-03 {
-    width: 300%;
-    height: 100%;
+    width: 900px;
+    height: 250px;
     display: flex;
     row-gap: 20px;
   }
   .texto-03 {
-    width: 300px;
-    height: 100%;
+    width: 295px;
+    height: 250px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -1755,7 +1762,7 @@ hr {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 20px;
+    padding-top: 0px;
   }
   .parte2-03 img {
     margin-top: 0px;
