@@ -1007,7 +1007,7 @@ input {
   header #burguer {
     width: 40px;
     cursor: pointer;
-    margin-right: 30px;
+    margin-right: 20px;
   }
   header span {
     font-size: 13px;
