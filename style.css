@@ -1364,9 +1364,7 @@ hr {
     margin-top: 0px;
   }
 }
-body {
-  overflow: scroll;
-}
+
 
 @media screen and (max-width: 480px) {
   p {
