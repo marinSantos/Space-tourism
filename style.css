@@ -16,10 +16,6 @@ font-family: 'Ovo', serif;
   transition: all 2s !important;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -287,8 +283,25 @@ header .atual {
 .img-01 img {
   margin-top: 40px;
   width: 100%;
+  -webkit-animation: rotaçao;
+          animation: rotaçao;
+  -webkit-animation-duration: 130s;
+          animation-duration: 130s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
+@-webkit-keyframes rotaçao {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotaçao {
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .slider1-01 {
   width: 100%;
   height: 400px;
@@ -1002,12 +1015,13 @@ input {
   }
   header #close {
     display: none;
+    width: 40px;
     cursor: pointer;
   }
   header #burguer {
+    display: block;
     width: 40px;
     cursor: pointer;
-    margin-right: 20px;
   }
   header span {
     font-size: 13px;
@@ -1029,26 +1043,40 @@ input {
   header #nav {
     display: flex;
     flex-direction: column;
-    background-color: rgba(0, 0, 255, 0);
-    position: relative;
-    top: 230px;
-    right: 15%;
-    height: 400px;
-    width: 220px;
+    background: rgba(255, 255, 255, 0);
+    -webkit-backdrop-filter: blur(40.7742px);
+            backdrop-filter: blur(40.7742px);
+    box-shadow: rgba(0, 0, 0, 0.8) -4px 0px 30px;
+    position: absolute;
+    top: 3.5em;
+    right: 0%;
+    left: 100%;
+    height: 100vh;
+    width: 0px;
     padding: 20px 20px;
-    visibility: hidden;
+    visibility: visible;
+    transition: 1s;
   }
   header #nav.mobile {
     display: flex;
     flex-direction: column;
-    background-color: blue;
-    position: relative;
-    top: 230px;
-    right: 15%;
-    height: 400px;
-    width: 220px;
+    background: rgba(255, 255, 255, 0);
+    -webkit-backdrop-filter: blur(40.7742px);
+            backdrop-filter: blur(40.7742px);
+    box-shadow: rgba(0, 0, 0, 0.8) -4px 0px 30px;
+    position: absolute;
+    top: 3.5em;
+    right: 0%;
+    left: 65%;
+    height: 100vh;
+    width: 320px !important;
     padding: 20px 20px;
-    visibility: visible;
+  }
+  header #burguer.mobile {
+    display: none !important;
+  }
+  header #close.mobile {
+    display: block !important;
   }
   header #nav a,
 header span {
@@ -1364,35 +1392,47 @@ hr {
     margin-top: 0px;
   }
 }
-
-
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) and (min-width: 320px) {
   p {
     line-height: 15px !important;
   }
   #nav {
     display: flex;
     flex-direction: column;
-    background-color: rgba(0, 0, 255, 0);
-    position: relative;
-    top: 230px;
-    right: 15%;
-    height: 400px;
-    width: 220px;
+    background: rgba(255, 255, 255, 0);
+    -webkit-backdrop-filter: blur(40.7742px);
+            backdrop-filter: blur(40.7742px);
+    box-shadow: rgba(0, 0, 0, 0.8) -4px 0px 30px;
+    position: absolute;
+    top: 3.5em;
+    right: 0%;
+    left: 100%;
+    height: 50vh;
+    width: 0px;
     padding: 20px 20px;
-    visibility: hidden;
+    visibility: visible;
+    transition: all 1s;
   }
   #nav.mobile {
     display: flex;
     flex-direction: column;
-    background-color: blue;
-    position: relative;
-    top: 230px;
-    right: 15%;
-    height: 400px;
-    width: 220px;
+    background: rgba(255, 255, 255, 0);
+    -webkit-backdrop-filter: blur(40.7742px);
+            backdrop-filter: blur(40.7742px);
+    box-shadow: rgba(0, 0, 0, 0.8) -4px 0px 30px;
+    position: absolute;
+    top: 3.5em;
+    right: 0%;
+    left: 40% !important;
+    height: 50vh;
+    width: 320px !important;
     padding: 20px 20px;
-    visibility: visible;
+  }
+  #nav.mobile #burguer {
+    display: none;
+  }
+  #nav.mobile #close {
+    display: block;
   }
   #inicio {
     background-image: url(imagenss/home/background-home-mobile.jpg);
@@ -1714,7 +1754,7 @@ hr {
     position: static;
     align-items: center;
     font-size: 12px;
-    margin-top: 10px;
+    margin-top: 5px;
   }
   .slides-03 {
     width: 900px;
