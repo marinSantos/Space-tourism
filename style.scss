@@ -21,10 +21,6 @@ font-family: 'Ovo', serif;
 }
 
 
-html {
-    scroll-behavior: smooth;
-}
-
 
 * {
     box-sizing: border-box;
@@ -320,6 +316,16 @@ header {
 .img-01 img {
     margin-top: 40px;
     width: 100%;
+    animation: rotaçao;
+    animation-duration: 130s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotaçao {
+
+    100% {
+        transform: rotate(360deg)
+    }
 }
 
 .slider1-01 {
@@ -999,9 +1005,10 @@ input {
 }
 
 @media screen and (max-width:845px) {
-    p{
+    p {
         line-height: 20px !important;
     }
+
     /*/*Technologia*/
     #radio0-03:checked~.primeiro-03 {
         margin-left: 0%;
@@ -1215,13 +1222,15 @@ input {
 
         #close {
             display: none;
+               width: 40px;
             cursor: pointer;
         }
 
         #burguer {
+            display: block;
             width: 40px;
             cursor: pointer;
-            margin-right: 30px;
+
         }
 
         span {
@@ -1251,27 +1260,43 @@ input {
         #nav {
             display: flex;
             flex-direction: column;
-            background-color: rgba(0, 0, 255, 0);
-            position: relative;
-            top: 230px;
-            right: 15%;
-            height: 400px;
-            width: 220px;
+            background: rgba(255, 255, 255, 0);
+            backdrop-filter: blur(40.7742px);
+            box-shadow: rgb(0 0 0 / 80%) -4px 0px 30px;
+            position: absolute;
+            top: 3.5em;
+            right: 0%;
+            left: 100%;
+            height: 100vh;
+            width: 0px;
             padding: 20px 20px;
-            visibility: hidden;
+            visibility: visible;
+            transition: 1s;
         }
 
         #nav.mobile {
             display: flex;
             flex-direction: column;
-            background-color: blue;
-            position: relative;
-            top: 230px;
-            right: 15%;
-            height: 400px;
-            width: 220px;
+            background: rgba(255, 255, 255, 0);
+            backdrop-filter: blur(40.7742px);
+            box-shadow: rgb(0 0 0 / 80%) -4px 0px 30px;
+            position: absolute;
+            top: 3.5em;
+            right: 0%;
+            left: 65%;
+            height: 100vh;
+            width: 320px !important;
             padding: 20px 20px;
-            visibility: visible;
+
+
+        }
+
+        #burguer.mobile  {
+            display: none !important;
+        }
+
+      #close.mobile  {
+            display: block !important;
         }
 
         #nav a,
@@ -1721,34 +1746,51 @@ input {
 
 
 
-@media screen and (max-width: 480px) {
-    p{
+@media screen and (max-width: 480px) and (min-width: 320px) {
+    p {
         line-height: 15px !important;
     }
+
     #nav {
         display: flex;
         flex-direction: column;
-        background-color: rgba(0, 0, 255, 0);
-        position: relative;
-        top: 230px;
-        right: 15%;
-        height: 400px;
-        width: 220px;
+        background: rgba(255, 255, 255, 0);
+        backdrop-filter: blur(40.7742px);
+        box-shadow: rgb(0 0 0 / 80%) -4px 0px 30px;
+        position: absolute;
+        top: 3.5em;
+        right: 0%;
+        left: 100%;
+        height: 50vh;
+        width: 0px;
         padding: 20px 20px;
-        visibility: hidden;
+        visibility: visible;
+        transition: all 1s;
     }
 
     #nav.mobile {
         display: flex;
         flex-direction: column;
-        background-color: blue;
-        position: relative;
-        top: 230px;
-        right: 15%;
-        height: 400px;
-        width: 220px;
+        background: rgba(255, 255, 255, 0);
+        backdrop-filter: blur(40.7742px);
+        box-shadow: rgb(0 0 0 / 80%) -4px 0px 30px;
+        position: absolute;
+        top: 3.5em;
+        right: 0%;
+        left: 40% !important;
+        height: 50vh;
+        width: 320px !important;
         padding: 20px 20px;
-        visibility: visible;
+
+
+    }
+
+    #nav.mobile #burguer {
+        display: none;
+    }
+
+    #nav.mobile #close {
+        display: block;
     }
 
 
@@ -1847,7 +1889,7 @@ input {
         flex-direction: column;
     }
 
-    #main01 h1{
+    #main01 h1 {
         font-size: 20px;
     }
 
@@ -2210,7 +2252,7 @@ input {
         position: static;
         align-items: center;
         font-size: 12px;
-        margin-top: 10px;
+        margin-top: 5px;
 
     }
 
