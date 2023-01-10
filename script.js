@@ -226,9 +226,14 @@ item302.addEventListener('click', function () {
 
 const mobile = document.getElementById('mobile')
 const nav = document.getElementById('nav')
+const burguer = document.getElementById('burguer')
+const clos = document.getElementById('close')
 
 mobile.addEventListener('click',function(){
 nav.classList.toggle('mobile')
+burguer.classList.toggle('mobile')
+clos.classList.toggle('mobile')
+
 })
 
 
