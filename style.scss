@@ -1267,7 +1267,7 @@ input {
             top: 3.5em;
             right: 0%;
             left: 100%;
-            height: 100vh;
+             height: 60vh;
             width: 0px;
             padding: 20px 20px;
             visibility: visible;
@@ -1284,7 +1284,7 @@ input {
             top: 3.5em;
             right: 0%;
             left: 65%;
-            height: 100vh;
+            height: 60vh;
             width: 320px !important;
             padding: 20px 20px;
 
@@ -1747,6 +1747,21 @@ input {
 
 
 @media screen and (max-width: 480px) and (min-width: 320px) {
+
+    .margin0-03 {
+        margin-left: -0%;
+    
+    }
+    
+    .margin1-03 {
+        margin-left: -34%;
+    
+    }
+    
+    .margin2-03 {
+        margin-left: -68%;
+    
+    }
     p {
         line-height: 15px !important;
     }
@@ -1812,7 +1827,7 @@ input {
 
     #tech {
         background-image: url(imagenss/technology/background-technology-mobile.jpg);
-        background-size: cover;
+        background-size: cover !important;
     }
 
     header {
@@ -2098,8 +2113,8 @@ input {
     }
 
     .crew1 img {
-        height: 250px;
-        width: 200px;
+        height: 170px;
+        width: 120px;
     }
 
     .crew2 {
@@ -2117,20 +2132,20 @@ input {
     }
 
     .crew3 img {
-        height: 250px;
-        width: 240px;
+        height: 170px;
+        width: 160px;
 
 
     }
 
     .crew2 img {
-        height: 250px;
-        width: 200px;
+        height: 170px;
+        width: 120px;
     }
 
     .crew4 img {
-        height: 300px;
-        width: 250px;
+        height: 200px;
+        width: 150px;
     }
 
     .crew2 {
@@ -2138,13 +2153,10 @@ input {
 
     }
 
-    .crew4 img {
-        height: 300px;
-        width: 250px;
-    }
+
 
     .crew4 {
-        margin-top: 0px;
+        margin-top: 20px;
         display: flex;
 
         align-items: center;
@@ -2320,12 +2332,13 @@ input {
 
     .parte2-03 img {
         margin-top: 0px;
-        width: 99%;
+        max-width: 100% ;
+    height: 100%;
     }
 
     .slider2-03 {
-        width: 250px;
-        height: 250px;
+        width: 100%;
+        height: 210px;
         display: flex;
         overflow: hidden;
         flex-direction: column;
@@ -2335,16 +2348,15 @@ input {
     }
 
     .slides2-03 {
-        width: 750px;
-        height: 250px;
+        width: 400%;
+        height: 210px;
         display: flex;
     }
 
     .img-03 {
-        width: 250px;
+        width: 100%;
         height: 100%;
         display: flex;
-        align-items: center;
     }
 
 
