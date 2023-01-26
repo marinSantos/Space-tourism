@@ -16,6 +16,10 @@ font-family: 'Ovo', serif;
   transition: all 2s !important;
 }
 
+.atualPage {
+  display: block !important;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -25,7 +29,6 @@ font-family: 'Ovo', serif;
 
 body {
   background-color: black;
-  overflow: hidden;
 }
 
 h1,
@@ -127,16 +130,6 @@ header .atual {
 }
 
 /*/* 00 Início */
-.mainSlider {
-  width: 100%;
-  height: 100%;
-}
-
-.mainSlides {
-  width: 100%;
-  height: 200%;
-}
-
 .sessao {
   width: 100%;
   height: 100%;
@@ -148,7 +141,7 @@ header .atual {
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
-  top: 0%;
+  display: none;
 }
 
 #main00 {
@@ -250,7 +243,7 @@ header .atual {
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
-  top: 100%;
+  display: none;
 }
 
 .parte1-01 {
@@ -283,14 +276,7 @@ header .atual {
 .img-01 img {
   margin-top: 40px;
   width: 100%;
-  -webkit-animation: rotaçao;
-          animation: rotaçao;
-  -webkit-animation-duration: 130s;
-          animation-duration: 130s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
 }
-
 
 .slider1-01 {
   width: 100%;
@@ -403,7 +389,7 @@ hr {
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
-  top: 200%;
+  display: none;
 }
 
 .main02 span {
@@ -557,7 +543,7 @@ hr {
 #tech {
   background-image: url(imagenss/technology/background-technology-desktop.jpg);
   background-size: cover;
-  top: 300%;
+  display: none;
 }
 
 #main03 {
