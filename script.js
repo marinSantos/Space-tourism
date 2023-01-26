@@ -1,12 +1,15 @@
-function backToHome(){
-    window.scroll(0,0)
+function backToHome() {
+    window.scroll(0, 0)
     home.classList.add('atual')
     destination.classList.remove('atual')
     crew.classList.remove('atual')
     tech.classList.remove('atual')
 
 }
-
+let inicio = document.getElementById('inicio')
+let destino = document.getElementById('destino')
+let tripulaçao = document.getElementById('tripulaçao')
+let technologia = document.getElementById('tech')
 
 let home = document.getElementById('home')
 let destination = document.getElementById('destination')
@@ -16,10 +19,15 @@ let tech = document.getElementById('technology')
 let explore = document.getElementById('explore')
 
 explore.addEventListener('click', function () {
-     destination.classList.add('atual')
-     home.classList.remove('atual')
+    destination.classList.add('atual')
+    home.classList.remove('atual')
     crew.classList.remove('atual')
-    
+    tech.classList.remove('atual')
+
+    destino.classList.add('atualPage')
+    inicio.classList.remove('atualPage')
+    tripulaçao.classList.remove('atualPage')
+    technologia.classList.remove('atualPage')
 })
 
 
@@ -29,6 +37,11 @@ home.addEventListener('click', function () {
     crew.classList.remove('atual')
     tech.classList.remove('atual')
 
+    destino.classList.remove('atualPage')
+    inicio.classList.add('atualPage')
+    tripulaçao.classList.remove('atualPage')
+    technologia.classList.remove('atualPage')
+
 })
 
 destination.addEventListener('click', function () {
@@ -37,6 +50,11 @@ destination.addEventListener('click', function () {
     home.classList.remove('atual')
     crew.classList.remove('atual')
     tech.classList.remove('atual')
+
+    destino.classList.add('atualPage')
+    inicio.classList.remove('atualPage')
+    tripulaçao.classList.remove('atualPage')
+    technologia.classList.remove('atualPage')
 
 })
 
@@ -51,6 +69,11 @@ crew.addEventListener('click', function () {
 
 
 
+    destino.classList.remove('atualPage')
+    inicio.classList.remove('atualPage')
+    tripulaçao.classList.add('atualPage')
+    technologia.classList.remove('atualPage')
+
 
 })
 
@@ -60,6 +83,11 @@ tech.addEventListener('click', function () {
     home.classList.remove('atual')
     crew.classList.remove('atual')
     destination.classList.remove('atual')
+
+    destino.classList.remove('atualPage')
+    inicio.classList.remove('atualPage')
+    tripulaçao.classList.remove('atualPage')
+    technologia.classList.add('atualPage')
 
 })
 
@@ -75,33 +103,33 @@ let item301 = document.getElementById('item3-01')
 
 let planet0 = document.getElementById('planet0')
 
-window.onresize = function(){
+window.onresize = function () {
     planet0.classList.remove('transition')
 }
 
-item001.addEventListener('mouseover',function(){
+item001.addEventListener('mouseover', function () {
     planet0.classList.add('transition')
 })
-item101.addEventListener('mouseover',function(){
+item101.addEventListener('mouseover', function () {
     planet0.classList.add('transition')
 })
-item201.addEventListener('mouseover',function(){
+item201.addEventListener('mouseover', function () {
     planet0.classList.add('transition')
 })
-item301.addEventListener('mouseover',function(){
+item301.addEventListener('mouseover', function () {
     planet0.classList.add('transition')
 })
 
-item001.addEventListener('mouseleave',function(){
+item001.addEventListener('mouseleave', function () {
     planet0.classList.remove('transition')
 })
-item101.addEventListener('mouseleave',function(){
+item101.addEventListener('mouseleave', function () {
     planet0.classList.remove('transition')
 })
-item201.addEventListener('mouseleave',function(){
+item201.addEventListener('mouseleave', function () {
     planet0.classList.remove('transition')
 })
-item301.addEventListener('mouseleave',function(){
+item301.addEventListener('mouseleave', function () {
     planet0.classList.remove('transition')
 })
 
@@ -148,6 +176,7 @@ item201.addEventListener('click', function () {
 
     planet0.classList.add('transition')
 })
+
 item301.addEventListener('click', function () {
     item301.classList.add('active-01')
     item001.classList.remove('active-01')
@@ -178,7 +207,7 @@ item002.addEventListener('click', function () {
     item102.classList.remove('active-02')
     item202.classList.remove('active-02')
     item302.classList.remove('active-02')
-    
+
     primeiro202.classList.add('margin0-02')
     primeiro202.classList.remove('margin1-02')
     primeiro202.classList.remove('margin2-02')
@@ -190,7 +219,7 @@ item102.addEventListener('click', function () {
     item002.classList.remove('active-02')
     item202.classList.remove('active-02')
     item302.classList.remove('active-02')
-     
+
 
     primeiro202.classList.add('margin1-02')
     primeiro202.classList.remove('margin0-02')
@@ -209,7 +238,7 @@ item202.addEventListener('click', function () {
     primeiro202.classList.remove('margin1-02')
     primeiro202.classList.remove('margin3-02')
 
-    
+
 })
 item302.addEventListener('click', function () {
     item302.classList.add('active-02')
@@ -217,7 +246,7 @@ item302.addEventListener('click', function () {
     item102.classList.remove('active-02')
     item202.classList.remove('active-02')
 
-    
+
     primeiro202.classList.add('margin3-02')
     primeiro202.classList.remove('margin0-02')
     primeiro202.classList.remove('margin1-02')
@@ -229,10 +258,10 @@ const nav = document.getElementById('nav')
 const burguer = document.getElementById('burguer')
 const clos = document.getElementById('close')
 
-mobile.addEventListener('click',function(){
-nav.classList.toggle('mobile')
-burguer.classList.toggle('mobile')
-clos.classList.toggle('mobile')
+mobile.addEventListener('click', function () {
+    nav.classList.toggle('mobile')
+    burguer.classList.toggle('mobile')
+    clos.classList.toggle('mobile')
 
 })
 
@@ -252,8 +281,8 @@ item0_03.addEventListener('click', function () {
     item0_03.classList.add('active03')
     item1_03.classList.remove('active03')
     item2_03.classList.remove('active03')
-    
-    
+
+
     primeiro2_03.classList.add('margin0-03')
     primeiro2_03.classList.remove('margin1-03')
     primeiro2_03.classList.remove('margin2-03')
@@ -264,8 +293,8 @@ item1_03.addEventListener('click', function () {
     item1_03.classList.add('active03')
     item0_03.classList.remove('active03')
     item2_03.classList.remove('active03')
-    
-     
+
+
 
     primeiro2_03.classList.add('margin1-03')
     primeiro2_03.classList.remove('margin0-03')
@@ -277,12 +306,12 @@ item2_03.addEventListener('click', function () {
     item2_03.classList.add('active03')
     item0_03.classList.remove('active03')
     item1_03.classList.remove('active03')
-    
+
 
     primeiro2_03.classList.add('margin2-03')
     primeiro2_03.classList.remove('margin0-03')
     primeiro2_03.classList.remove('margin1-03')
 
-    
+
 })
 
