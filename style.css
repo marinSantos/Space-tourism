@@ -185,8 +185,8 @@ header .atual {
   height: 170px;
   border-radius: 60%;
   border: solid 40px rgba(255, 255, 255, 0.336);
-  cursor: pointer;
   z-index: 10;
+  cursor: default;
   transition: all 0.6s;
 }
 
@@ -195,6 +195,7 @@ header .atual {
   font-family: "Ovo", serif;
   font-weight: 200;
   color: black;
+  cursor: pointer;
   background-color: white;
   padding: 40px 40px;
   border-radius: 60%;
@@ -212,8 +213,8 @@ header .atual {
   height: 200px;
 }
 
-#explore:hover {
-  border: solid 130px rgba(255, 255, 255, 0.336);
+#explore:has(> h2#ball:hover) {
+  border: solid 130px rgba(255, 255, 255, 0.336) !important;
 }
 
 /* parte00-1 */
@@ -1055,7 +1056,7 @@ input {
     display: block !important;
   }
   header #nav a,
-header span {
+  header span {
     font-size: 25px;
   }
   #inicio {
@@ -1180,8 +1181,8 @@ header span {
     display: flex;
   }
   .texto-01 h3,
-p,
-hr {
+  p,
+  hr {
     width: 100%;
   }
   .texto-01 {
@@ -1552,8 +1553,8 @@ hr {
     row-gap: 10px;
   }
   .texto-01 h3,
-p,
-hr {
+  p,
+  hr {
     width: 100%;
   }
   #menu-01 {
