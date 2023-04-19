@@ -69,8 +69,7 @@ header {
   height: 60px;
   width: 100%;
   padding: 0 40px;
-  -webkit-backdrop-filter: blur(2rem);
-          backdrop-filter: blur(2rem);
+  backdrop-filter: blur(2rem);
   position: fixed;
   z-index: 100;
 }
@@ -109,13 +108,11 @@ header #nav {
   height: 100%;
   width: 50%;
   display: flex;
-  -moz-column-gap: 16%;
-       column-gap: 16%;
+  column-gap: 16%;
 }
 header #nav a {
   display: flex;
-  -moz-column-gap: 5px;
-       column-gap: 5px;
+  column-gap: 5px;
   align-items: center;
   height: 100%;
   border-bottom: solid 1px rgba(255, 255, 255, 0);
@@ -165,31 +162,6 @@ header .atual {
   width: 50%;
   height: 100vh;
 }
-
-.bola {
-  width: 270px;
-  height: 270px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  bottom: 16%;
-  right: 15%;
-}
-
-#explore {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 170px;
-  height: 170px;
-  border-radius: 60%;
-  border: solid 40px rgba(255, 255, 255, 0.336);
-  z-index: 10;
-  cursor: default;
-  transition: all 0.6s;
-}
-
 .parte00-2 h2 {
   letter-spacing: 1px;
   font-family: "Ovo", serif;
@@ -207,13 +179,34 @@ header .atual {
   border: solid 40px rgba(233, 227, 227, 0);
   transition: all 0.6s;
 }
-
+.parte00-2 .bola {
+  width: 270px;
+  height: 270px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 16%;
+  right: 15%;
+}
+.parte00-2 #explore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 170px;
+  border-radius: 60%;
+  border: solid 40px rgba(255, 255, 255, 0.336);
+  z-index: 10;
+  cursor: pointer;
+  transition: all 0.6s;
+}
 .parte00-2 h2:hover {
   width: 200px;
   height: 200px;
 }
 
-#explore:has(> h2#ball:hover) {
+.hoverExplore {
   border: solid 130px rgba(255, 255, 255, 0.336) !important;
 }
 
@@ -250,7 +243,7 @@ header .atual {
 .parte1-01 {
   width: 50%;
 }
-.parte1-01 .parte1-01 span {
+.parte1-01 span {
   font-size: 20px;
   color: rgba(255, 255, 255, 0.527);
   letter-spacing: 3px;
@@ -262,8 +255,7 @@ header .atual {
   font-size: 20px;
   letter-spacing: 1px;
   display: flex;
-  -moz-column-gap: 15px;
-       column-gap: 15px;
+  column-gap: 15px;
   letter-spacing: 3px;
   position: absolute;
   left: 12%;
@@ -316,8 +308,7 @@ header .atual {
   height: 400px;
   overflow: hidden;
   display: flex;
-  -moz-column-gap: 60px;
-       column-gap: 60px;
+  column-gap: 60px;
   position: absolute;
   right: 15%;
   bottom: 10%;
@@ -346,8 +337,7 @@ hr {
 
 .distance {
   display: flex;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
+  column-gap: 30px;
   justify-content: center;
 }
 
@@ -359,8 +349,7 @@ hr {
 
 .labels {
   display: flex;
-  -moz-column-gap: 40px;
-       column-gap: 40px;
+  column-gap: 40px;
 }
 
 .labels label {
@@ -414,8 +403,7 @@ hr {
   font-size: 20px;
   letter-spacing: 1px;
   display: flex;
-  -moz-column-gap: 15px;
-       column-gap: 15px;
+  column-gap: 15px;
   letter-spacing: 3px;
   position: absolute;
   left: 12%;
@@ -481,8 +469,7 @@ hr {
 
 .labels-02 {
   display: flex;
-  -moz-column-gap: 25px;
-       column-gap: 25px;
+  column-gap: 25px;
   position: absolute;
   top: 520px;
   left: 12%;
@@ -568,8 +555,7 @@ hr {
   font-size: 20px;
   letter-spacing: 1px;
   display: flex;
-  -moz-column-gap: 15px;
-       column-gap: 15px;
+  column-gap: 15px;
   letter-spacing: 3px;
   position: absolute;
   left: 12%;
@@ -812,8 +798,7 @@ input {
   }
   header #nav {
     width: 30%;
-    -moz-column-gap: 12%;
-         column-gap: 12%;
+    column-gap: 12%;
   }
   .slider2-01 {
     right: 1%;
@@ -869,8 +854,7 @@ input {
     font-size: 20px;
     letter-spacing: 1px;
     display: flex;
-    -moz-column-gap: 20px;
-         column-gap: 20px;
+    column-gap: 20px;
     letter-spacing: 3px;
     position: static;
   }
@@ -918,8 +902,7 @@ input {
     color: white;
     display: flex;
     flex-direction: row;
-    -moz-column-gap: 30px;
-         column-gap: 30px;
+    column-gap: 30px;
     position: static;
     align-items: center;
     justify-content: center;
@@ -984,8 +967,7 @@ input {
   }
   header {
     justify-content: center;
-    -moz-column-gap: 0px;
-         column-gap: 0px;
+    column-gap: 0px;
   }
   header #mobile {
     display: flex;
@@ -1021,8 +1003,7 @@ input {
     display: flex;
     flex-direction: column;
     background: rgba(255, 255, 255, 0);
-    -webkit-backdrop-filter: blur(40.7742px);
-            backdrop-filter: blur(40.7742px);
+    backdrop-filter: blur(40.7742px);
     box-shadow: rgba(0, 0, 0, 0.8) -4px 0px 30px;
     position: absolute;
     top: 3.5em;
@@ -1038,8 +1019,7 @@ input {
     display: flex;
     flex-direction: column;
     background: rgba(255, 255, 255, 0);
-    -webkit-backdrop-filter: blur(40.7742px);
-            backdrop-filter: blur(40.7742px);
+    backdrop-filter: blur(40.7742px);
     box-shadow: rgba(0, 0, 0, 0.8) -4px 0px 30px;
     position: absolute;
     top: 3.5em;
@@ -1193,8 +1173,7 @@ input {
     margin: 10px 0;
   }
   .parte1-01 h3 {
-    -moz-column-gap: 15px;
-         column-gap: 15px;
+    column-gap: 15px;
     position: static;
   }
   #planet2 .img-01 {
@@ -1242,8 +1221,7 @@ input {
     font-size: 20px;
     letter-spacing: 1px;
     display: flex;
-    -moz-column-gap: 15px;
-         column-gap: 15px;
+    column-gap: 15px;
     letter-spacing: 3px;
     position: static;
   }
@@ -1298,8 +1276,7 @@ input {
   }
   .labels-02 {
     display: flex;
-    -moz-column-gap: 25px;
-         column-gap: 25px;
+    column-gap: 25px;
     position: static;
     padding-top: 0px;
     height: 20px;
@@ -1386,8 +1363,7 @@ input {
     display: flex;
     flex-direction: column;
     background: rgba(255, 255, 255, 0);
-    -webkit-backdrop-filter: blur(40.7742px);
-            backdrop-filter: blur(40.7742px);
+    backdrop-filter: blur(40.7742px);
     box-shadow: rgba(0, 0, 0, 0.8) -4px 0px 30px;
     position: absolute;
     top: 3.5em;
@@ -1403,8 +1379,7 @@ input {
     display: flex;
     flex-direction: column;
     background: rgba(255, 255, 255, 0);
-    -webkit-backdrop-filter: blur(40.7742px);
-            backdrop-filter: blur(40.7742px);
+    backdrop-filter: blur(40.7742px);
     box-shadow: rgba(0, 0, 0, 0.8) -4px 0px 30px;
     position: absolute;
     top: 3.5em;
@@ -1437,8 +1412,7 @@ input {
     background-size: cover !important;
   }
   header {
-    -moz-column-gap: 20px;
-         column-gap: 20px;
+    column-gap: 20px;
   }
   #main00 {
     flex-direction: column;
@@ -1561,8 +1535,7 @@ input {
     position: static;
   }
   .parte1-01 h3 {
-    -moz-column-gap: 15px;
-         column-gap: 15px;
+    column-gap: 15px;
     position: static;
   }
   .margin0 {
@@ -1706,8 +1679,7 @@ input {
     font-size: 20px;
     letter-spacing: 1px;
     display: flex;
-    -moz-column-gap: 20px;
-         column-gap: 20px;
+    column-gap: 20px;
     letter-spacing: 3px;
     position: static;
   }
@@ -1755,8 +1727,7 @@ input {
     color: white;
     display: flex;
     flex-direction: row;
-    -moz-column-gap: 30px;
-         column-gap: 30px;
+    column-gap: 30px;
     position: static;
     align-items: center;
     justify-content: center;
@@ -1810,4 +1781,6 @@ input {
   #main03 input {
     display: none;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
