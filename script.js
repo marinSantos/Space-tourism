@@ -6,6 +6,7 @@ function backToHome() {
     tech.classList.remove('atual')
 
 }
+
 let inicio = document.getElementById('inicio')
 let destino = document.getElementById('destino')
 let tripulaçao = document.getElementById('tripulaçao')
@@ -313,5 +314,16 @@ item2_03.addEventListener('click', function () {
     primeiro2_03.classList.remove('margin1-03')
 
 
+})
+
+
+const ballHover = document.getElementById('ball')
+
+
+ballHover.addEventListener('mouseenter',() =>{
+    explore.classList.add('hoverExplore')
+})
+ballHover.addEventListener('mouseleave',() =>{
+    explore.classList.remove('hoverExplore')
 })
 
